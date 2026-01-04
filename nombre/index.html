@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nombre Mystère</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jeu du Nombre Mystère</h1>
+  <p>Devine un nombre entre 1 et 100</p>
+  <input type="number" id="guess" placeholder="Votre proposition">
+  <button onclick="checkGuess()">Deviner</button>
+  <p id="feedback"></p>
+  <p id="attempts">Essais : 0</p>
+  <button onclick="resetGame()">Rejouer</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

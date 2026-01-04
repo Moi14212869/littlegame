@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.game {
+  background: white;
+  width: 350px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.result, .score {
+  margin-top: 20px;
+}
+
+#winner {
+  color: #0077cc;
+  transition: all 0.3s ease;
+}
+
+.win {
+  color: green;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.lose {
+  color: red;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.draw {
+  color: orange;
+  font-weight: bold;
+  transform: scale(1.05);
+}

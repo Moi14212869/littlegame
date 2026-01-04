@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pierre Feuille Ciseaux</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game">
+    <h1>Pierre • Feuille • Ciseaux ✊📄✂️</h1>
+    <div class="buttons">
+      <button onclick="play('pierre')">✊ Pierre</button>
+      <button onclick="play('feuille')">📄 Feuille</button>
+      <button onclick="play('ciseaux')">✂️ Ciseaux</button>
+    </div>
+    <div class="result">
+      <p id="player-choice"></p>
+      <p id="computer-choice"></p>
+      <h2 id="winner"></h2>
+    </div>
+    <div class="score">
+      <p>👤 Joueur : <span id="player-score">0</span></p>
+      <p>🤖 Ordinateur : <span id="computer-score">0</span></p>
+    </div>
+	</div>
+  <script src="script.js"></script>
+</body>
+</html>
