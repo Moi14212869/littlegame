@@ -1,0 +1,52 @@
+* {
+    background-color: #00ffff;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.main {
+    display: flex;
+    justify-content:space-around;
+}
+.content {
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 25px;
+    box-shadow: 10px 5px 5px #0000ff;
+}
+.Jeu {
+    background-color: #fff;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+p {
+    font-family: 'Edu+SA+Hand',sans-serif;
+    color: #0000ff;
+    background-color: #fff;
+}
+a {
+    left: 50px;
+    bottom: 50px;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration:none;
+    cursor: pointer;
+    border: 0;
+    background-color: #0000ff;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+a:hover {
+    transform: scale(1.05);
+}
