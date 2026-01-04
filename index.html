@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeux</title>
+    <title>Littelgame</title>
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Reset */
+        /* Reset et polices */
         * {
             margin: 0;
             padding: 0;
@@ -21,106 +21,63 @@
             flex-direction: column;
             align-items: center;
             color: #fff;
-            animation: bgAnimation 15s ease infinite alternate;
-        }
-
-        @keyframes bgAnimation {
-            0% { background-position: 0 0; }
-            50% { background-position: 100% 100%; }
-            100% { background-position: 0 0; }
-        }
-
-        header {
-            width: 100%;
-            text-align: center;
-            padding: 40px 20px;
-            background: rgba(0,0,0,0.2);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            backdrop-filter: blur(5px);
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            margin-bottom: 50px;
         }
 
         h1 {
+            text-align: center;
             font-size: 3rem;
-            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
-            color: #fff;
+            margin: 50px 0;
+            text-shadow: 2px 2px #0000aa;
         }
 
         main {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 40px;
+            gap: 30px;
             padding-bottom: 50px;
-            width: 90%;
-            max-width: 1200px;
         }
 
         .content {
-            background: linear-gradient(145deg, #ffffffdd, #ffffffbb);
-            width: 260px;
-            border-radius: 25px;
+            background-color: #ffffffdd;
+            width: 250px;
+            border-radius: 20px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .content::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
-            transform: rotate(45deg);
-            transition: all 0.5s ease;
-            pointer-events: none;
-        }
-
-        .content:hover::before {
-            top: -20%;
-            left: -20%;
         }
 
         .content:hover {
-            transform: translateY(-15px) scale(1.05);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
         }
 
         .content img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             margin-bottom: 15px;
         }
 
         .Jeu p {
             color: #0072ff;
             margin-bottom: 20px;
-            font-weight: bold;
         }
 
         a {
             display: inline-block;
-            padding: 12px 30px;
-            border-radius: 15px;
-            background: linear-gradient(135deg, #0072ff, #00c6ff);
+            padding: 10px 25px;
+            border-radius: 10px;
+            background-color: #0072ff;
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         a:hover {
-            background: linear-gradient(135deg, #00c6ff, #0072ff);
-            transform: scale(1.1);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            background-color: #005bb5;
+            transform: scale(1.05);
         }
 
         /* Responsive */
@@ -134,7 +91,7 @@
 </head>
 <body>
     <header>
-        <h1>🎮 Mes Jeux 🎮</h1>
+        <h1>Littelgame</h1>
     </header>
     <main>
         <div class="content">
