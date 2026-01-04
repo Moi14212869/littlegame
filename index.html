@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeux</title>
-    <link rel="stylesheet" href="./styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+        * {
+    background-color: #00ffff;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.main {
+    display: flex;
+    justify-content:space-around;
+}
+.content {
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 25px;
+    box-shadow: 10px 5px 5px #0000ff;
+}
+.Jeu {
+    background-color: #fff;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+p {
+    font-family: 'Edu+SA+Hand',sans-serif;
+    color: #0000ff;
+    background-color: #fff;
+}
+a {
+    left: 50px;
+    bottom: 50px;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration:none;
+    cursor: pointer;
+    border: 0;
+    background-color: #0000ff;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+a:hover {
+    transform: scale(1.05);
+}
     </style>
 </head>
 <body>
@@ -15,15 +66,6 @@
     </header>
     <main>
         <div class="main">
-        <div class="content">
-            <img src="./Jeu_Phaser/aperçu.png" alt="Monstre" height="100" width="100">
-            <div class="Jeu">
-                <p>Un petit jeu de plateforme
-                </p>
-                <br>
-                <a href="./Jeu_Phaser/index.html">play</a>
-            </div>
-        </div>
         <div class="content">
             <img src="./chifoumi/pierre-feuille-cisaux.png" 
             alt="pierre-feuille-cisaux"height="100" width="100">
@@ -34,27 +76,6 @@
                 </p>
                 <br>
                 <a href="./chifoumi/index.html">play</a>
-            </div>
-        </div>
-        <div class="content">
-            <img src="./monster/monster.png" alt="Monstre" height="100" width="100">
-            <div class="Jeu">
-                <p>Tu as 10 secondes pour détruire 
-                    <br>
-                    des monstres en leurs cliquant dessu.
-                </p>
-                <br>
-                <a href="./monster/index.html">play</a>
-                </div>
-            </div>
-            <div class="content">
-                <img src="./jeu_multi/aperçu.png" alt="Monstre" height="100" width="100">
-                <div class="Jeu">
-                <p>Un petit jeu de plateforme multijoueurs coopératif
-                </p>
-                <br>
-                <a href="./jeu_multi/index.html">play</a>
-                </div>
             </div>
         </div>
         <div class="main">
@@ -88,4 +109,5 @@
         </div>
     </main>
 </body>
+
 </html>
