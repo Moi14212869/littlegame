@@ -4,7 +4,7 @@ let flags = Array(boardSize * boardSize).fill(false);
 let board = [];
 let revealed = [];
 let gameOver = false;
-
+let score = parseInt(localStorage.getItem("score")) || 0;
 function initGame() {
   board = Array(boardSize * boardSize).fill(0);
   flags = Array(boardSize * boardSize).fill(false);
@@ -104,6 +104,8 @@ function revealCell(index) {
   if (revealed.filter((v, i) => !v && board[i] !== "B").length === 0) {
     gameOver = true;
     document.getElementById("message").textContent = "🎉 Gagné !";
+    score++;
+	  localStorage.setItem("score", score);
     revealAll();
   }
 
