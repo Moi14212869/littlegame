@@ -1,6 +1,6 @@
 let secretNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
-
+let score = parseInt(localStorage.getItem("score")) || 0;
 function checkGuess() {
   const guessInput = document.getElementById("guess");
   const feedback = document.getElementById("feedback");
@@ -18,6 +18,10 @@ function checkGuess() {
   if (userGuess === secretNumber) {
     feedback.textContent = `Bravo ! Le nombre était ${secretNumber}.`;
     feedback.style.color = "green";
+    if (attempts < 10) {
+      score++;
+	    localStorage.setItem("score", score);
+    }
   } else if (userGuess < secretNumber) {
     feedback.textContent = "C'est plus !";
     feedback.style.color = "orange";
