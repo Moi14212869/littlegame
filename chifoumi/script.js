@@ -24,7 +24,6 @@ function play(playerChoice) {
     winner = "Tu gagnes ! 🎉";
 	winnerEl.classList.add("win");
     playerScore++;
-	localStorage.setItem("number", number);
 	score++;
 	localStorage.setItem("score", score);
   } else {
