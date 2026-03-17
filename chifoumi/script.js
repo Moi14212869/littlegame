@@ -1,6 +1,6 @@
 let playerScore = 0;
 let computerScore = 0;
-
+let score = parseInt(localStorage.getItem("score")) || 0;
 function play(playerChoice) {
   const choices = ["pierre", "feuille", "ciseaux"];
   const computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -24,6 +24,9 @@ function play(playerChoice) {
     winner = "Tu gagnes ! 🎉";
 	winnerEl.classList.add("win");
     playerScore++;
+	localStorage.setItem("number", number);
+	score++;
+	localStorage.setItem("score", score);
   } else {
     winner = "L'ordi gagne ! 😢";
 	winnerEl.classList.add("lose");
