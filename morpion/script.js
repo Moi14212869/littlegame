@@ -1,7 +1,6 @@
 let currentPlayer = "X";
 let board = ["", "", "", "", "", "", "", "", ""];
 let gameOver = false;
-
 const boardElement = document.getElementById("board");
 const messageElement = document.getElementById("message");
 
